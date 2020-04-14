@@ -20,9 +20,9 @@ import {DynamicTextService} from "../../shared/services/dynamic-text.service";
       state('nextSlide1', style({
         transform: '{{changed}}'
       }), {params: {changed: 'translateX(200)'}}),
-      transition('resetSlide <=> nextSlide', animate('1000ms ease-in-out')),
-      transition('nextSlide <=> nextSlide1', animate('1000ms ease-in-out')),
-      transition('nextSlide1 <=> resetSlide', animate('1000ms ease-in-out')),
+      transition('resetSlide <=> nextSlide', animate('10000ms ease-in-out')),
+      transition('nextSlide <=> nextSlide1', animate('10000ms ease-in-out')),
+      transition('nextSlide1 <=> resetSlide', animate('10000ms ease-in-out')),
     ])
   ]
 
